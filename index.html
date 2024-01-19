@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live coding: jquery-animations</title>
+    <style>
+        #fading-text {
+            padding: 1em 1.3em;
+            background-color: rgb(0, 255, 247);
+        }
+        #sliding-text {
+            padding: 1em 1.3em;
+            background-color: rgb(76, 255, 109);
+        }
+        #delayed-text {
+            padding: 1em 1.3em;
+            background-color: rgb(255, 76, 222);
+        }
+        #square {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Animations</h1>
+
+    <section>
+        <h2>Animazioni dei contenuti</h2>
+
+        <button id="hide-btn">Nascondi</button>
+        <button id="show-btn">Mostra</button>
+        <button id="toggle-btn">Alterna</button>
+
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, placeat?</p>
+    </section>
+
+    <section>
+        <h2>Fading</h2>
+
+        <button id="fade-in">Fade in</button>
+        <button id="fade-out">Fade out</button>
+        <button id="fade-toggle">Fade toggle</button>
+        <button id="fade-to">Fade to</button>
+
+        <p id="fading-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, placeat?</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, placeat?</p>
+    </section>
+
+    <section>
+        <h2>Sliding</h2>
+
+        <button id="slide-up">Slide up</button>
+        <button id="slide-down">Slide down</button>
+        <button id="slide-toggle">Slide toggle</button>
+
+        <p id="sliding-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, placeat?</p>
+    </section>
+
+    <section>
+        <h2>Delay</h2>
+
+        <button id="delay-btn">Delay</button>
+        <p id="delayed-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, placeat?</p>
+    </section>
+
+    <section>
+        <h2>Custom animations</h2>
+
+        <div id="square"></div>
+        <br>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+    </section>
+
+</body>
+
+</html>
